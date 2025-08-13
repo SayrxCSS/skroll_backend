@@ -14,17 +14,9 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.0",
-    "multer": "^1.4.5-lts.1",
-    "socks": "2.8.3",
-    "smart-buffer": "4.2.0",
-    "ipaddress": "0.2.6"
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  },
-  "overrides": {
-    "socks": "2.8.3",
-    "smart-buffer": "4.2.0",
-    "ipaddress": "0.2.6"
   }
 }
