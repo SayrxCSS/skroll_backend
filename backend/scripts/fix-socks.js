@@ -1,4 +1,4 @@
-// fix-socks.js — creates a stub if socks/build/index.js is missing (Render build quirk)
+// fix-socks.js — ensure socks/build/index.js exists (Render sometimes strips it)
 const fs = require('fs');
 const path = require('path');
 
@@ -11,7 +11,6 @@ try {
 
   const buildDir = path.join(modDir, 'build');
   const indexJs = path.join(buildDir, 'index.js');
-
   fs.mkdirSync(buildDir, { recursive: true });
 
   if (!fs.existsSync(indexJs)) {
